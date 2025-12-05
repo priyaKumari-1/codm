@@ -1,0 +1,194 @@
+// import "./BlogFormSection.css";
+
+const BlogFormSection = ({
+  heading = "Share Your Thoughts on Our Integration Framework",
+  subHeading = "Leave a comment",
+}) => {
+  return (
+    <section className="section-comments position-relative section-padding">
+      <div className="container position-relative z-1">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <h2 className="mb-4 text-center" style={{fontWeight:700}}>{heading}</h2>
+            <h4 className="mb-5">{subHeading}</h4>
+
+            {/* Form */}
+            <form>
+              <div className="row g-4">
+                {/* Name */}
+                <div className="col-md-4">
+                  <div className="form-group">
+                    <input
+                      id="name"
+                      placeholder="Enter your name"
+                      required
+                      type="text"
+                      name="name"
+                    />
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="col-md-4">
+                  <div className="form-group">
+                    <input
+                      id="email"
+                      placeholder="info@"
+                      required
+                      type="email"
+                      name="email"
+                    />
+                  </div>
+                </div>
+
+                {/* Website */}
+                <div className="col-md-4">
+                  <div className="form-group">
+                    <input
+                      id="website"
+                      placeholder="https://yourwebsite.com"
+                      type="text"
+                      name="website"
+                    />
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <div className="col-12 border">
+                  <div className="form-group">
+                    <textarea
+                      className="form-control"
+                      id="comment"
+                      name="comment"
+                      placeholder="Describe Your Project in Short"
+                      rows="4"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Submit */}
+                <div className="col-12 hover-up">
+                  <button type="submit" className="btn purple-bg mt-4 p-3 hover-up">
+                    Send Message
+                    <svg
+                      className="ms-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M21.1059 12.2562H0.5V11.7443H21.1059H22.313L21.4594 10.8907L17.0558 6.48705L17.4177 6.12508L23.2929 12.0002L17.4177 17.8754L17.0558 17.5134L21.4594 13.1098L22.313 12.2562H21.1059Z"
+                        fill="black"
+                        stroke="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogFormSection;
+
+
+// const BlogFormSection = () => {
+//     return (
+//         <section className="section-comments position-relative section-padding">
+//             <div className="container position-relative z-1">
+//                 <div className="row justify-content-center">
+//                     <div className="col-lg-8">
+//                         {/* Heading */}
+//                         <h2 className="mb-4 text-center">
+//                             Share Your Thoughts on Our Integration Framework
+//                         </h2>
+//                         <h4 className="mb-5">Leave a comment</h4>
+
+//                         {/* Form */}
+//                         <form>
+//                             <div className="row g-4">
+//                                 {/* Name */}
+//                                 <div className="col-md-4">
+//                                     <div className="form-group">
+//                                         <label className="form-label" htmlFor="name"></label>
+//                                         <input
+//                                             className=""
+//                                             id="name"
+//                                             placeholder="Enter your name"
+//                                             required
+//                                             type="text"
+//                                             name="name"
+//                                         />
+//                                     </div>
+//                                 </div>
+
+//                                 {/* Email */}
+//                                 <div className="col-md-4">
+//                                     <div className="form-group">
+//                                         <label className="form-label" htmlFor="email"></label>
+//                                         <input
+//                                             className=""
+//                                             id="email"
+//                                             placeholder="info@"
+//                                             required
+//                                             type="email"
+//                                             name="email"
+//                                         />
+//                                     </div>
+//                                 </div>
+
+//                                 {/* Website */}
+//                                 <div className="col-md-4">
+//                                     <div className="form-group">
+//                                         <label className="form-label" htmlFor="website"></label>
+//                                         <input
+//                                             className=""
+//                                             id="website"
+//                                             placeholder="https://yourwebsite.com"
+//                                             type="text"
+//                                             name="website"
+//                                         />
+//                                     </div>
+//                                 </div>
+
+//                                 {/* Comment */}
+//                                 <div className="col-12 border">
+//                                     <div className="form-group">
+//                                         <label className="form-label" htmlFor="comment"></label>
+//                                         <textarea
+//                                             className="form-control"
+//                                             id="comment"
+//                                             name="comment"
+//                                             placeholder="Describe Your Project in Short"
+//                                             rows="4"
+//                                             required
+//                                         ></textarea>
+//                                     </div>
+//                                 </div>
+
+//                                 {/* Submit */}
+//                                 <div className="col-12 hover-up">
+//                                     <button type="submit" className="btn purple-bg mt-4 p-3 hover-up">
+//                                         Send Message
+//                                         <svg className="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+//                                             <path d="M21.1059 12.2562H0.5V11.7443H21.1059H22.313L21.4594 10.8907L17.0558 6.48705L17.4177 6.12508L23.2929 12.0002L17.4177 17.8754L17.0558 17.5134L21.4594 13.1098L22.313 12.2562H21.1059Z" fill="black" stroke="white" />
+//                                         </svg>
+//                                     </button>
+//                                 </div>
+//                             </div>
+//                         </form>
+//                     </div>
+//                 </div>
+//             </div>
+//         </section>
+//     );
+// };
+
+// export default BlogFormSection;

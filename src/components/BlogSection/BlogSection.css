@@ -1,0 +1,38 @@
+.blog_section{
+    padding-top: 5rem;
+}
+.blog_section_heading{
+    font-size: 4rem;
+}
+.blagCards_container{
+    padding-top: 4rem;
+}
+
+/* blog btn */
+.blagCards_btn{
+    color: #886dfd;
+    background-color: #f5eeff;
+    border-radius: 40rem;
+    padding:0.2rem 0.8rem;
+    width: fit-content;
+    margin-top: 1rem;
+    font-weight:500;
+}
+
+.blogContentSection h5{
+    color: #111827;
+    font-weight: 600;
+}
+
+@media (max-width:578px) {
+    .blog_sectionContainer{
+    text-align: center;
+}
+.btnStay_Updated{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+

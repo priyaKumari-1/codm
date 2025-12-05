@@ -1,0 +1,142 @@
+.footer {
+  background: #111827;
+  color: #fff;
+  padding: 6rem 20px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo img {
+  max-width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444;
+  color: white !important;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  min-width: 150px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #6c63ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ✅ Tablet screens */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .footer-left {
+    max-width: 600px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+/* ✅ Mobile screens (2 columns layout) */
+@media (max-width: 576px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left; 
+  }
+
+  .footer-column {
+    min-width: unset;
+  }
+
+  .footer-column h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
